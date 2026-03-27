@@ -1,0 +1,203 @@
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        background-image: none !important;
+        background-color: #f8f9fa;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+        margin: 0 auto 50px;
+    }
+    
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 18px !important;
+    }
+    
+    .card {
+        margin: 10px 0;
+        padding: 30px 15px;
+    }
+    
+    .card .title {
+        font-size: 24px;
+        margin: 0 0 25px;
+        padding: 10px 0 10px 30px;
+    }
+    
+    .card .input-container {
+        margin: 0 15px 30px;
+    }
+    
+    .card .input-container input {
+        font-size: 18px;
+        height: 50px;
+    }
+    
+    .card .input-container label {
+        font-size: 18px;
+        line-height: 50px;
+    }
+    
+    .card .button-container {
+        margin: 0 15px;
+    }
+    
+    .card .button-container button {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    
+    .card .footer {
+        font-size: 16px;
+        margin: 20px 0 0;
+    }
+    
+    /* Search results positioning for mobile */
+    #result {
+        position: fixed !important;
+        top: 120px !important;
+        right: 15px !important;
+        left: 15px !important;
+        width: auto !important;
+        max-width: calc(100% - 30px);
+        z-index: 3000;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    #resulthotel {
+        position: fixed !important;
+        top: 180px !important;
+        right: 15px !important;
+        left: 15px !important;
+        width: auto !important;
+        max-width: calc(100% - 30px);
+        z-index: 3000;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* Mobile navigation */
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    
+    /* Form adjustments */
+    .form-control {
+        font-size: 16px; /* Prevents zoom on iOS */
+        height: 44px;
+        min-height: 44px;
+    }
+    
+    /* Button adjustments */
+    .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+        min-height: 44px;
+    }
+    
+    /* Table responsive */
+    .table {
+        font-size: 14px;
+    }
+    
+    .table th,
+    .table td {
+        padding: 8px 5px;
+    }
+    
+    /* Image responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Hide/Show for mobile */
+    .mobile-only {
+        display: block !important;
+    }
+    
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card .title {
+        font-size: 20px;
+    }
+    
+    .card .input-container input {
+        font-size: 16px;
+        height: 45px;
+    }
+    
+    .card .input-container label {
+        font-size: 16px;
+        line-height: 45px;
+    }
+    
+    .card .button-container button {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+    
+    .navbar-brand {
+        font-size: 16px !important;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .card {
+        padding: 20px 10px;
+    }
+    
+    .card .input-container {
+        margin: 0 10px 25px;
+    }
+    
+    .card .button-container {
+        margin: 0 10px;
+    }
+}
+
+/* Touch-friendly targets */
+@media (hover: none) and (pointer: coarse) {
+    .card .button-container button,
+    .btn,
+    .nav-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    select,
+    textarea {
+        min-height: 44px;
+        font-size: 16px;
+    }
+}
